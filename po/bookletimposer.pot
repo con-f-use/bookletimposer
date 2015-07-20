@@ -1,0 +1,209 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-16 12:50+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../bin/bookletimposer:64
+msgid "output PDF file"
+msgstr ""
+
+#: ../bin/bookletimposer:68
+msgid ""
+"automatic converstion (don't show the user interface). At least input file "
+"must be defined"
+msgstr ""
+
+#: ../bin/bookletimposer:72
+msgid "shows the user interface (default)."
+msgstr ""
+
+#: ../bin/bookletimposer:76
+msgid "makes a booklet"
+msgstr ""
+
+#: ../bin/bookletimposer:80
+msgid "convert a booklet to single pages"
+msgstr ""
+
+#: ../bin/bookletimposer:84
+msgid "don't do any reorganisation (will only scale and assemble pages)"
+msgstr ""
+
+#: ../bin/bookletimposer:88
+msgid "Copy the same group of input pages on one output page"
+msgstr ""
+
+#: ../bin/bookletimposer:92
+msgid "number of pages per sheet, in the format HORIZONTALxVERTICAL, e.g. 2x1"
+msgstr ""
+
+#: ../bin/bookletimposer:96
+msgid "output page format, e.g. A4 or A3R"
+msgstr ""
+
+#: ../bin/bookletimposer:100
+msgid "do not overwrite output file if it exists"
+msgstr ""
+
+#: ../bin/bookletimposer:127
+msgid "ERROR: In automatic mode, you must provide a file to process."
+msgstr ""
+
+#: ../bin/bookletimposer:136
+#, c-format
+msgid "%i%%: %s"
+msgstr ""
+
+#: ../lib/pdfimposer.py:102
+#, python-format
+msgid "The layout %s is incompatible with the input page orientation"
+msgstr ""
+
+#: ../lib/pdfimposer.py:115
+#, python-format
+msgid "The page format \"%s\" is unknown"
+msgstr ""
+
+#: ../lib/pdfimposer.py:125
+msgid "User interruption"
+msgstr ""
+
+#: ../lib/pdfimposer.py:749
+msgid "writing converted file"
+msgstr ""
+
+#: ../lib/pdfimposer.py:751
+msgid "done"
+msgstr ""
+
+#: ../lib/pdfimposer.py:769
+#, python-format
+msgid "creating page %i"
+msgstr ""
+
+#: ../lib/pdfimposer.py:812
+#, python-format
+msgid "extracting page %i"
+msgstr ""
+
+#: ../lib/bookletimposer/gui.py:231
+msgid "Choose file to save"
+msgstr ""
+
+#: ../lib/bookletimposer/gui.py:260
+#, python-format
+msgid "Unable to display help: %s"
+msgstr ""
+
+#: ../lib/bookletimposer/gui.py:271
+msgid "Cancel triggered, please wait..."
+msgstr ""
+
+#: ../lib/bookletimposer/gui.py:288
+msgid "Conversion failed"
+msgstr ""
+
+#: ../lib/bookletimposer/gui.py:314
+#, python-format
+msgid "A file named %s already exist."
+msgstr ""
+
+#: ../lib/bookletimposer/gui.py:315
+msgid "Do you want to replace it?"
+msgstr ""
+
+#: ../lib/bookletimposer/gui.py:329
+msgid "Conversion cancelled"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:1
+msgid "Copyright © 2008-2012 kjo@a4nancy.net.eu.org"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:2
+msgid "Convert PDF documents between diffrents page layouts"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:3
+msgid ""
+"\n"
+"PyPdfConv - Utility to convert PDF files between diffrents page layouts\n"
+"Copyright (C) 2008-2012 Kjö Hansi Glaz <kjo&a4nancy.net.eu.org>\n"
+"\n"
+"This program is  free software; you can redistribute  it and/or modify\n"
+"it under the  terms of the GNU General Public  License as published by\n"
+"the Free Software Foundation; either  version 3 of the License, or (at\n"
+"your option) any later version.\n"
+"\n"
+"This program  is distributed in the  hope that it will  be useful, but\n"
+"WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\n"
+"MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\n"
+"General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:20
+msgid "Output _paper format"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:21
+msgid "La_yout"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:22
+msgid "_Output file"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:23
+msgid "(None)"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:24
+msgid "_Copy the same group of input pages on one output page"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:25
+msgid ""
+"Produce a _booklet\n"
+"out of a linear document"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:27
+msgid ""
+"Produce a _linear document \n"
+"out of a booklet"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:29
+msgid ""
+"Put _multiple input pages \n"
+"on one output sheet"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:31
+msgid "Conversion type"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:32
+msgid "_Input file"
+msgstr ""
+
+#: ../data/bookletimposer.ui.h:33
+msgid "Open input PDF file"
+msgstr ""

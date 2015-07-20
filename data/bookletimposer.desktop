@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=0.2
+Name=bookletimposer
+Comment=Impose PDF documents to create booklets
+Comment[fr]=Imposer des documents PDF pour créer des brochures
+Type=Application
+Exec=bookletimposer
+Icon=bookletimposer
+Categories=Office;
+Terminal=false
+StartupNotify=false

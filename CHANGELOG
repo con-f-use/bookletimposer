@@ -1,0 +1,38 @@
+Changelog
+=========
+
+0.2 rehost
+---
+
+### bookletimposer
+
+ - added auto open the new file after creation
+
+0.2
+---
+
+### pdfimposer
+
+- fix crash when using numerous pages per sheet with few input pages
+- fix unexistant variable in StreamConverter.__get_sequence_for_linearize
+- fix baseclass call in AbstractConverter.get_output_format
+- document private methode and cleanup code comments
+
+### bookletimposer
+
+- use gtk+3, glib and pygi instead of pygtk
+- some Gnome HIG compliance:
+    - use big buttons with icons for conversion type
+    - remove close button
+    - embed a progress bar instead of displaying a progress dialog
+- make <Esc> and <Ctrl>q close the application
+- don't try to import deprecated psyco
+- use convert button instead of apply; this fixes the "same menmonics" bug
+- help: simplify legal notice
+- man: convert to markdown converted by pandoc
+- fix calling unexistant method in ConverterPreferences.create_converter
+
+0.1
+---
+
+- initial release

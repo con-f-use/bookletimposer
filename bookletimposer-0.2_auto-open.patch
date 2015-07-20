@@ -1,0 +1,35 @@
+diff -rupN bookletimposer-0.2/lib/bookletimposer/gui.py bookletimposer-0.2_autoopen/lib/bookletimposer/gui.py
+--- bookletimposer-0.2/lib/bookletimposer/gui.py	2012-05-15 20:16:47.000000000 +0200
++++ bookletimposer-0.2_autoopen/lib/bookletimposer/gui.py	2015-07-14 16:55:41.677620191 +0200
+@@ -38,14 +38,16 @@ from gi.repository import GObject
+ GObject.threads_init()
+ from gi.repository import Gio
+ 
+-import os.path
++import sys
++import os
++from subprocess import call
++
+ import threading
+ import traceback
+ 
+ import pdfimposer # We need its exceptions
+ 
+ import backend
+-import pdfimposer
+ import config
+ from config import debug
+ 
+@@ -346,6 +348,12 @@ class BookletImposerUI(object):
+         def worker():
+             try:
+                 converter.run()
++                outname = converter.get_outfile_name()
++                if os.path.isfile(outname):
++                    if sys.platform.startswith('linux'):
++                        call(["xdg-open", outname])
++                    else:
++                        os.startfile(outname)
+             except UserInterrupt:
+                 GObject.idle_add(idle_cb_finish_callback)
+             except Exception, e:

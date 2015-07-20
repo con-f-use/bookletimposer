@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY appversion "0.1">
+  <!ENTITY manrevision "0.1">
+  <!ENTITY app "Bookletimposer">
+]>
+<!-- 
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<article id="index" lang="en">
+  <articleinfo> 
+    <title>&app; Manual</title> 
+    <abstract role="description">
+      <para>&app; is an utility to achieve some basic imposition on PDF
+      documents</para>
+    </abstract>
+    <copyright> 
+      <year>2012</year> 
+      <holder>Kjö Hansi Glaz</holder> 
+    </copyright>
+    <!-- translators: uncomment this:
+    <copyright>
+      <year>2003</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+    -->
+    <publisher> 
+      <publishername>Kjö Hansi Glaz</publishername> 
+    </publisher> 
+
+    &legal;
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+    other legal stuff such as "NO WARRANTY" statement. Please do not change 
+    any of this. -->
+
+    <authorgroup> 
+      <author> 
+        <firstname>Kjö Hansi Glaz</firstname> 
+      </author> 
+    </authorgroup>
+
+
+    <!-- According to GNU FDL, revision history is mandatory if you are -->
+    <!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+    <!-- Remember to remove the &manrevision; entity from the revision entries other -->
+    <!-- than the current revision. -->
+    <revhistory>
+      <revision> 
+        <revnumber>&app; User Manual 0.1</revnumber> 
+        <date>17 Fev 2012</date> 
+        <revdescription> 
+                <para role="author">Kjö Hansi Glaz</para>
+        </revdescription> 
+        </revision> 
+    </revhistory> 
+
+    <releaseinfo>This manual describes version &appversion; of &app;.</releaseinfo> 
+    <legalnotice> 
+      <title>Feedback</title> 
+      <para>To report a bug or make a suggestion regarding &app; or
+      this manual, please send an email to
+      <email>kjo@a4nancy.net.eu.org</email>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm><primary>bookletimposer</primary></indexterm>
+
+
+  <!-- ============= Document Body ============================= -->
+  <!-- ============= Introduction ============================== -->
+  <!-- Use the Introduction section to give a brief overview of what
+       the application is and what it does. -->
+  <sect1 id="introduction"> 
+    <title>Introduction</title> 
+
+    <mediaobject>
+      <imageobject><imagedata fileref="figures/icon.png" format="PNG"/></imageobject>
+      <textobject><phrase><application>&app;</application> icon.</phrase></textobject> 
+    </mediaobject> 
+ 
+    <para><application>&app;</application> is an utility to achieve some basic imposition on PDF
+    documents, especially designed to work on booklets.</para>
+
+    <para>
+      <application>&app;</application> allows:
+    </para>
+    <itemizedlist> 
+      <listitem><para>
+        to transform linear documents to booklets;
+      </para></listitem>
+      <listitem><para>
+        to reduce a document to put many on one sheet (for tracts for example);
+      </para></listitem>
+      <listitem><para>
+        to transform booklets to linear documents.
+      </para></listitem>
+    </itemizedlist>
+
+  </sect1>
+
+  <sect1 id="usage"> 
+    <title>Usage</title> 
+
+    <sect2 id="usage-start">
+    <title>To Start <application>&app;</application></title>
+    <para>You can start <application>&app;</application> in the following ways:
+    </para> 
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>Applications</guimenu> menu</term>
+        <listitem>
+          <para>Choose 
+            <menuchoice>
+              <guisubmenu>Office</guisubmenu>
+              <guimenuitem>&app;</guimenuitem>
+            </menuchoice>.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Command line</term>
+          <listitem>
+            <para>To start <application>&app;</application> from a command line, type the following command, 
+            then press <keycap>Return</keycap>: <command>bookletimposer</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="usage-main">
+    <title>Main window</title>
+    <para>When you start <application>&app;</application>, the following window
+      is displayed.</para>
+
+      <figure id="main-window-fig"> 
+        <title><application>&app;</application> window</title> 
+        <screenshot> 
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/main-window.png" format="PNG"/></imageobject>
+            <textobject><phrase>Shows the<application>&app;</application> window.</phrase></textobject> 
+          </mediaobject> 
+        </screenshot> 
+      </figure>
+        
+        <para>The <application>&app;</application> window contains the following elements: </para>
+
+        <variablelist>
+          <varlistentry>
+            <term><guilabel>Input file</guilabel> button</term>
+            <listitem>
+              <para>Click on the button to choose the PDF file to work on.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Conversion type</guilabel></term>
+            <listitem>
+              <para>Choose the action to perform on the selected PDF file.</para>
+              <para>Available actions are:</para>
+              <itemizedlist> 
+                <listitem><para>
+                  <guilabel>Produce a booklet out of a linear
+                  document</guilabel> – to transform linear documents to
+                  booklets;
+                </para></listitem>
+                <listitem><para>
+                  <guilabel>Produce a linear document out of a
+                  booklet</guilabel> – to transform booklets to linear
+                  documents.
+                </para></listitem>
+                <listitem><para>
+                  <guilabel>Put multiple input pages on one output
+                  page</guilabel> – to reduce a document to put many on
+                  one sheet (for flyers for example);
+                </para></listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Copy the same group of input pages on one output
+            page</guilabel></term>
+            <listitem>
+              <para>To copy several times the same input page on each output
+              page. For instance with a one page input document, you may
+              select<guilabel>Put multiple input pages on one output
+              page</guilabel> in <guilabel>Conversion type</guilabel> and check
+              this box to obtain several copies of the input page.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Layout</guilabel></term>
+            <listitem>
+              <para>Use this drop-down list to select how to dispose input pages
+              on each output page. For example, select <guilabel>2x1</guilabel> to
+              output a simple booklet.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Output paper format</guilabel></term>
+            <listitem>
+              <para>Use this drop-down list to select the paper size of the
+              output and thus the scaling factor.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Output file</guilabel></term>
+            <listitem>
+              <para>Click on the button to open a choose where to save the
+              converted PDF file.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Apply</guilabel> button</term>
+            <listitem>
+              <para>Click on this button to launch the conversion. A window will
+              pop up to show the progression.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Close</guilabel> button</term>
+            <listitem>
+              <para>Click on this button to close <application>&app;</application>.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Help</guilabel> button</term>
+            <listitem>
+              <para>Click on this button to display this help.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>About</guilabel> button</term>
+            <listitem>
+              <para>Click on this button to display informations about &app;,
+              its version, etc.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+
+    </sect2>
+  </sect1>
+
+  <sect1 id="about"> 
+    <title>About &app;</title> 
+    <para>
+      To find more information about &app;, please visit the <ulink
+      url="http://kjo.herbesfolles.org/bookletimposer/" type="http">&app; Web
+      site</ulink>.
+    </para>
+
+    <para> This program is distributed under the terms of the GNU
+      General Public license as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option)
+      any later version. A copy of this license can be found at this
+      <ulink url="ghelp:gpl" type="help">link</ulink>, or in the file
+      COPYING included with the source code of this program.
+    </para>
+  </sect1> 
+
+</article>

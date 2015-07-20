@@ -1,0 +1,7 @@
+bin/bookletimposer
+lib/pdfimposer.py
+lib/bookletimposer/backend.py
+lib/bookletimposer/config.py
+lib/bookletimposer/gui.py
+lib/bookletimposer/__init__.py
+[type: gettext/glade]data/bookletimposer.ui
