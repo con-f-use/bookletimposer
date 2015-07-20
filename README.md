@@ -4,7 +4,7 @@ Achieve some basic imposition on PDF documents
 Rehost
 ============
 This is a rehost of the original Bookletimposer, with a very small change.
-Bookletimposer now opens the converted file automatically after genertion 
+Bookletimposer now opens the converted file automatically after its generation 
 finished.
 
 The author of the whole original program is Kjö Hansi Glaz 
