@@ -8,7 +8,10 @@ Bookletimposer now opens the converted file automatically after its generation
 finished.
 
 The author of the whole original program is Kjö Hansi Glaz 
-(kjo@a4nancy.net.eu.org).
+(kjo@a4nancy.net.eu.org). The rehost was made because the original git 
+repository is now unreachable. I (con-f-use) am not associate with 
+Kjö Hansi Glaz and would be happy to transfer ownership of this repository
+to him at his request.
 
 What is it ?
 ============
