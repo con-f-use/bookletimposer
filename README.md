@@ -13,6 +13,8 @@ repository is now unreachable. The hoster (con-f-use) is not associated with
 Kjö Hansi Glaz and would be happy to transfer ownership of this repository
 to him at his request.
 
+**Edit**: There is an active repository of the original now: https://git.codecoop.org/kjo/bookletimposer
+
 What is it ?
 ============
 
